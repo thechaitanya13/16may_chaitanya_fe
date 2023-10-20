@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>question-4</title>
+    <style>  #svgelem { 
+        position: relative; 
+        left: 50%; 
+        -webkit-transform: translateX(-20%); 
+        -ms-transform: translateX(-20%); 
+        transform: translateX(-20%); 
+    } </style>
+</head>
+<body>
+    <p><h1>Canvas and SVG tags</h1></p>
+    <p><h2> CANVAS TAGS:</h2></p>
+   <ul><h2><li>Canvas has poor scalability. Hence it is not suitable for printing on higher resolution.</li></h2>
+<h2><li>Canvas gives better performance with smaller surface or larger number of objects.</li></h2>
+<h2><li>Canvas can be modified through script only</li></h2>
+<h2><li>The canvas element is used to draw graphics via JavaScript. </li></h2></ul> <br>
+<h2>EXAMPLE FOR CANVAS TAGS:</h2>
+<canvas id="newCanvas" width="100" height="100"
+style="border:1px solid black;"> 
+</canvas>
+<script> 
+    var c = document.getElementById('newCanvas'); 
+    var ctx = c.getContext('2d'); 
+    ctx.fillStyle = 'blue'; 
+    ctx.fillRect(0, 0, 100, 100); 
+</script> 
+
+<p><h2>SVG TAGS:</h2></p>
+   <ul><h2><li>The svg stands for Scalable Vector Graphics. </li></h2>
+    <h2><li>SVG has better scalability. So it can be printed with high quality at any resolution.</li></h2>
+    <h2><li>SVG gives better performance with smaller number of objects or larger surface.</li></h2>
+    <h2><li>SVG can be modified through both script and CSS.</li></h2>
+    <h2><li>A vector image can be scaled up or down to any extent without losing the image quality</li></h2>
+    <h2>EXAMPLE FOR SVG TAGS:</h2>
+    <svg id="svgelem" height="200"> 
+        <circle id="bluecircle" cx="60"
+            cy="60" r="50" fill="blue" /> 
+    </svg> 
+
+</body>
+</html>

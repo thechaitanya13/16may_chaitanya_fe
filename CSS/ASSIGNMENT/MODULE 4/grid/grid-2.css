@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.grid {
+    height: auto;
+    width: 100%;
+    border: 3px solid black;
+    display: grid;
+    grid-template-rows: 200px 200px 200px 100px;
+    grid-template-columns: repeat(12, 1fr);
+    justify-content: center;
+    background-color: black;
+    color: white;
+    gap: 20px 20px;
+}
+
+.grid .c-1 {
+    background: lightblue;
+    grid-area: 1/1/2/9;
+}
+
+.grid .c-2 {
+    background: darkblue;
+    grid-area: 1/9/2/13;
+}
+
+.grid .c-3 {
+    background: red;
+    grid-area: 2/1/3/4;
+}
+
+.grid .c-4 {
+    background: pink;
+    grid-area: 2/4/3/10;
+}
+
+.grid .c-5 {
+    background: orange;
+    grid-area: 2/10/3/13;
+}
+
+.grid .c-6 {
+    background: green;
+    grid-area: 3/1/4/7;
+}
+
+.grid .c-7 {
+    background: violet;
+    grid-area: 3/7/4/13;
+}
+
+.grid .c-8 {
+    background: darkolivegreen;
+    grid-area: 4/1/5/5;
+}
+
+.grid .c-9 {
+    background: darkgray;
+    grid-area: 4/5/5/9;
+}
+
+.grid .c-10 {
+    background: darkgoldenrod;
+    grid-area: 4/9/5/13;
+}

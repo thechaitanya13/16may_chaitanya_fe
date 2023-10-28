@@ -1,0 +1,128 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.main{
+    position: relative;
+    height: 600px;
+    width: 100%;
+}
+.main img{
+    position: absolute;
+    height: 100%;
+    filter: brightness(50%);
+    width: 100%;
+    z-index: -1;
+}
+.main .content{
+    position: absolute;
+    top: 150px;
+    left: 37%;
+    text-align: center;
+}
+svg{
+    position: absolute;
+    bottom: 0;
+}
+.main .content h1{
+    font-size: 40px;
+    color: white;
+    font-family: sans-serif;
+    letter-spacing: 2px;
+}
+.main .content p{
+    color: white;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+.main .content .pin{
+    position: absolute;
+    top: 80px;
+    left: 240px;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background: red;
+}
+.main .content .pin::after {
+    content: "";
+    position: absolute;
+    top: 3px;
+    right: 0px;
+    height: 2px;
+    width: 200px;
+    margin: 0% 30px;
+    background: white;
+}
+.main .content .pin::before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 0;
+    height: 2px;
+    width: 200px;
+    background: white;
+    margin: 0% 30px;
+}
+.main .pic{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background: red;
+    position: absolute;
+    z-index: 1;
+}
+.main .pic img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+.main .p-1{
+    top: 390px;
+    left: 200px;
+}
+.main .p-2 {
+    top: 350px;
+    left: 480px;
+    transform: scale(1.4);
+}
+.main .p-2::after {
+    content: "";
+    position: absolute;
+    height: 50px;
+    width: 0.5px;
+    background: white;
+    top: 100%;
+    left: 50%;
+}
+.main .con2{
+    text-align: center;
+    position: absolute;
+    top: 480px;
+    left: 425px;
+    color: pink;
+    font-family: sans-serif;
+}
+.main .con2 h3{
+    color: red;
+    font-size: 20px;
+    font-weight: 400;
+}
+.main .con2 p{
+    font-size: 14px;
+}
+
+.main .p-3{
+    top: 400px;
+    left: 750px;
+}
+
+.main .p-4{
+    top: 440px;
+    left: 1020px;
+}
+
+.main .p-5{
+    top: 360px;
+    left: 1300px;
+}

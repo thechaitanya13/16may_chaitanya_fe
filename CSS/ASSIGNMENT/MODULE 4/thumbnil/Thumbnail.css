@@ -1,0 +1,48 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+h1 {
+    font-size: 40px;
+    text-align: center;
+    background-color: coral;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+.card-container{
+    /* height: 10px; */
+    width: 85%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px 20px;
+}
+.card{
+    background-color: aliceblue;
+    height: 425px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 2);
+}
+.card img{
+    width: 100%;
+    height: auto;
+    border-radius: 5px 5px 0 0;
+}
+.card-content p{
+    color: black;
+    line-height: 1.5;
+}
+.mainbut{
+display: flex;
+}
+.but button{
+    margin: 2px;
+    padding: 5px;
+    border: 2px solid black;
+}

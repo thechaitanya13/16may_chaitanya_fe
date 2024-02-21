@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Modual-4_17</title>
+    <style>
+        body {
+            background: lightgreen;
+            color: black;
+            font-size: 20px;
+        }
+
+        dd li {
+            list-style: none;
+            width: 30%;
+            background-color: lightcoral;
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        section {
+            height: 50px;
+            width: 50%;
+            background-color: red;
+        }
+
+        dt {
+            font-size: 22px;
+        }
+
+        .parent {
+            height: 50px;
+            width: 50%;
+            border: 1px solid;
+        }
+
+        .parent>p {
+            background-color: orange;
+        }
+
+        #parent {
+            height: 50px;
+            width: 50%;
+            background-color: yellow;
+        }
+
+        .box {
+            height: 50px;
+            width: 50px;
+            border: 1px solid;
+            border-radius: 50%;
+            background-color: green;
+        }
+
+        dd table,
+        tr,
+        td {
+            border: 1px solid red;
+        }
+
+        .universal {
+            width: 50%;
+            background-color: #7474f8;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>
+        <u>Q-17 &nbsp; What is the meaning of the CSS selector? </u>
+    </h2>
+    <h2>Ans.</h2>
+    <li>css selector means ,css apply to which html tag or element it called css selector </li>
+    <li>hear some example of css selector with how apply it. </li> <br>
+    <dt>1.Element selector.</dt>
+    <dd>
+        <section></section>
+        <p>
+            <li> section{</li>
+            <li>height: 50px;</li>
+            <li>width: 50%;</li>
+            <li> background-color: red;</li>
+            <li>}</li>
+        </p>
+    </dd>
+    <dt>2.child selector.</dt>
+    <dd>
+        <div class="parent">
+            <p>Gaurav Nakum</p>
+        </div>
+        <p>
+            <li>.parent>p{</li>
+            <li> background-color: orange;</li>
+            <li>}</li>
+        </p>
+    </dd>
+    <dt>3.id selector.</dt>
+    <dd>
+        <div id="parent"></div>
+        <p>
+            <li>#parent{</li>
+            <li>height: 50px;</li>
+            <li>width: 50%;</li>
+            <li>background-color: yellow;</li>
+            <li> }</li>
+        </p>
+    </dd>
+    <dt>4.class selector.</dt>
+    <dd>
+        <div class="box"></div>
+        <p>
+            <li> height: 50px; </li>
+            <li> width: 50px;</li>
+            <li>border: 1px solid;</li>
+            <li>border-radius: 50%;</li>
+            <li>background-color: green;</li>
+        </p>
+    </dd>
+    <dt>5.Universal Selector.</dt>
+    <dd>
+        <div class="universal">
+            <div class="parent"></div>
+            <table>
+                <tr>
+                    <td>my</td>
+                    <td>name is </td>
+                    <td>Gaurav</td>
+                </tr>
+            </table>
+        </div>
+        <p>
+            <li>*{</li>
+            <li> background-color: #7474f8;</li>
+            <li>}</li>
+        </p>
+    </dd>
+    <dt>6.Group selector.</dt>
+    <dd>
+        <div class="universal" style="background-color: indigo;">
+            <div class="parent"></div>
+            <table>
+                <tr>
+                    <td>my</td>
+                    <td>name is </td>
+                    <td>Gaurav</td>
+                </tr>
+            </table>
+        </div>
+        <p>
+            <li>.parent,table,td,li{</li>
+            <li>background-color:indigo;</li>
+            <li>}</li>
+        </p>
+    </dd>
+    <dt>7.Pseudo-Class.</dt>
+    <dd>
+        <p>
+            <li>In Pseudo-Class Focus,Hover ,link,nth-child etc selector is use.</li>
+        </p>
+    </dd>
+    <dt>8.Pseudo-Element.</dt>
+    <dd>
+        <p>
+            <li>In Pseudo-Element before after first-letter,first-line,selection is use.</li>
+        </p>
+    </dd>
+    <dt>9.descendant selector</dt>
+    <dd>
+        <div class="parent">
+            <p style="background-color: violet;">Gaurav nakum</p>
+        </div>
+        <p>
+            <li>.parent .child{</li>
+            <li>background-color: violet</li>
+            <li>}</li>
+        </p>
+    </dd>
+</body>
+
+</html>

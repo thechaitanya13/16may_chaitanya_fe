@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modual-4 Q-1</title>
+    <style>
+        body {
+            background: lightgreen;
+        }
+        
+        .child {
+            border: 1px solid;
+            width: 30vw;
+            height: 45vh;
+            display: inline-block;
+            margin: auto;
+            position: absolute;
+        }
+
+        .parent {
+            margin: auto;
+            width: 61vw;
+            height: 41vh;
+            position: relative;
+        }
+
+        .c-1 {
+            left: 0%;
+        }
+
+        .c-2 {
+            right: 0%;
+        }
+
+        .c-2 img {
+            filter: brightness(70%);
+        }
+        .c-2 ul{
+            position: absolute;
+            top: 0%;
+            padding: 0%;
+            margin: 0%;
+            
+        }
+        .c-2 ul li{
+            display: inline-block;
+            border: 1px solid;
+            padding: 10px 20px;
+            background-color: #ffffff4d;
+            cursor: pointer;
+        }
+        .c-2 h1{
+            color: #fff;
+            position: absolute;
+            top: 30%;
+            left: 20%;
+
+        }
+        li{
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2><u>Q-1. &nbsp; What are the benefits of using CSS? </u></h2>
+    <h2>Ans.</h2>
+    <li>Css main advantage is , by it we can make alternative and useful web-pages.</li>
+    <li>css can apply in web-page for all range smart devise</li>
+    <li>we can set different position and look of element in web page</li>
+    <p>Hear we can see using css and without css with css webpages look's.</p>
+    <div class="parent">
+       <abbr title="without css">
+        <div class="child c-1">
+            <img src="https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="image" height="30%" width="30%">
+            <ul>
+                <li>home</li>
+                <li>news</li>
+                <li>vidio</li>
+                <li>contact</li>
+                <li>login</li>
+            </ul>
+            <h1>wellcome our site</h1>
+        </div>
+       </abbr>
+        <abbr title="with css">
+            <div class="child c-2">
+                <img src="https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    alt="image" height="100%" width="100%">
+                <ul>
+                    <li>home</li>
+                    <li>news</li>
+                    <li>vidio</li>
+                    <li>contact</li>
+                    <li>login</li>
+                </ul>
+                <h1>wellcome our site</h1>
+            </div>
+        </abbr>
+    </div>
+</body>
+
+</html>

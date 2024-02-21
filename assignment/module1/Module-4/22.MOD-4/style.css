@@ -1,0 +1,103 @@
+body {
+    font-family: sans-serif;
+}
+
+.parent {
+    border: 1px solid;
+    width: 100%;
+    height: 620px;
+    margin: auto;
+    padding: 0%;
+    position: relative;
+}
+
+.child {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+}
+
+.c-1 {
+    border-right: transparent;
+    background-color: #202020;
+}
+
+.c-2 {
+    border-left: transparent;
+    left: 50%;
+    background: url("./image/bgImage.svg");
+    background-size: cover;
+
+}
+
+.c-3 {
+    position: absolute;
+    left: 5vw;
+    top: 15vh;
+    width: 35vw;
+    height: 55vh;
+    text-align: right;
+}
+
+.c-4 {
+    z-index: 1;
+    position: absolute;
+    left: 47.2%;
+    top: 185px;
+    width: 5%;
+    height: 46.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.c-4 .box {
+    opacity: 0.251;
+    width: 73px;
+    height: 72px;
+    border-radius: 36px;
+    background-color: #ffffff;
+
+}
+
+.box-child {
+    position: absolute;
+    left: 47.6%;
+    top: 216px;
+    width: 64px;
+    height: 64px;
+    border-radius: 32px;
+    background-color: #f4f5f9;
+}
+.b-2 {
+    top:307px;
+}
+
+.b-3 {
+    top: 397px;
+}
+.box-child img {
+    position: absolute;
+    top: 29%;
+    left: 25%;
+}
+.c-3 h1 {
+    font-size: 36px;
+    letter-spacing: 4px;
+    color: #f4f5f9;
+    font-weight: 700;
+    
+}
+.c-3 h1::after{
+    content: '';
+   border: 1.5px solid #e74c3c;
+}
+
+.c-3 h4 {
+    color: #e74c3c;
+}
+
+.c-3 P {
+    font-size: 14px;
+    color: #999999;
+}

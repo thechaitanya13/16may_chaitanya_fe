@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Create-Layout</title>
+    <style>
+        h1{
+            /* position: absolute; */
+            text-align: center;
+            margin-top: 0%;
+        }
+        .parent {
+            height: 85vh;
+            width: 100%;
+            border: 1px solid;
+            display: grid;
+            grid-template-rows: repeat(2, 40%);
+            grid-template-columns: repeat(3, 30%);
+            justify-content: center;
+            align-content: center;
+            gap: 10px 10px;
+        }
+
+        .box {
+            height: 100%;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.15);
+        }
+
+        .box .b-1,
+        .box .b-2 {
+            height: 50%;
+            width: 100%;
+        }
+
+        .b-1 img {
+            height: 100%;
+            width: 100%;
+        }
+
+        .b-2 {
+            position: relative;
+        }
+
+        .b-2 .child {
+            position: absolute;
+            top: 60%;
+            height: 30px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .c-1 {
+            height: inherit;
+            width: 40%;
+        }
+
+        .c-1 button {
+            padding: 5px 5px;
+        }
+
+        .c-2 {
+            height: inherit;
+            width: 20%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Q-24.Create Layout</h1>
+    <div class="parent">
+        <div class="box">
+            <div class="b-1"><img
+                    src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/creative-thumbnail-design-template-a4beff0bd4b978f3747922e15a2c66ae_screen.jpg?ts=1591096103"
+                    alt="Thumbnail"></div>
+            <div class="b-2">Card title. This is a wider card with supporting text below as a natural lead-in to
+                additional content. This content is a little bit longer
+                <div class="child">
+                    <div class="c-1"><button>Button-1</button><button>Button-2</button></div>
+                    <div class="c-2">Gaurav</div>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="b-1"><img
+                    src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/yellow-shopping-sale-email-header-template-design-f7027eb34f7b4df349ba72646a8ad382_screen.jpg?ts=1626254071"
+                    alt="Thumbnail"></div>
+            <div class="b-2">Card title. This is a wider card with supporting text below as a natural lead-in to
+                additional content. This content is a little bit longer
+                <div class="child">
+                    <div class="c-1"><button>Button-1</button><button>Button-2</button></div>
+                    <div class="c-2">Gaurav</div>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="b-1"><img
+                    src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/online-classes-design-template-59fea6ad04609de680128e09cd278af3.jpg?ts=1644469886"
+                    alt="Thumbnail"></div>
+            <div class="b-2">Card title. This is a wider card with supporting text below as a natural lead-in to
+                additional content. This content is a little bit longer
+                <div class="child">
+                    <div class="c-1"><button>Button-1</button><button>Button-2</button></div>
+                    <div class="c-2">Gaurav</div>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="b-1"><img
+                    src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/blue-realtor-linkedin-banner-template-design-0916bc8de50eae3dcce8c3c01c0b0b3c.jpg?ts=1581318114"
+                    alt="Thumbnail"></div>
+            <div class="b-2">Card title. This is a wider card with supporting text below as a natural lead-in to
+                additional content. This content is a little bit longer
+                <div class="child">
+                    <div class="c-1"><button>Button-1</button><button>Button-2</button></div>
+                    <div class="c-2">Gaurav</div>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="b-1"><img
+                    src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/birthday-card-template-design-3ce128da05cc98c6b627c072ec777914.jpg?ts=1677499259"
+                    alt="Thumbnail"></div>
+            <div class="b-2">Card title. This is a wider card with supporting text below as a natural lead-in to
+                additional content. This content is a little bit longer
+                <div class="child">
+                    <div class="c-1"><button>Button-1</button><button>Button-2</button></div>
+                    <div class="c-2">Gaurav</div>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="b-1"><img
+                    src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/welcome-to-the-team-template-design-9ad178f0e04a155e798c346260e97944.jpg?ts=1676615468"
+                    alt="Thumbnail"></div>
+            <div class="b-2">Card title. This is a wider card with supporting text below as a natural lead-in to
+                additional content. This content is a little bit longer
+                <div class="child">
+                    <div class="c-1"><button>Button-1</button><button>Button-2</button></div>
+                    <div class="c-2">Gaurav</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

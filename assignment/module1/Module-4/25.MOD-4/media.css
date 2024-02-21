@@ -1,0 +1,266 @@
+@media(max-width: 500px) {
+    body {
+        padding: 0%;
+        margin: 0%;
+        box-sizing: border-box;
+    }
+
+    /* ---------------------------------------------Header------------------------------------------------ */
+    .log {
+        display: none;
+    }
+
+    header {
+        justify-content: space-between !important;
+        padding: 0%;
+    }
+
+    .menu {
+        margin-left: 250px;
+    }
+
+    .menu img {
+        display: block;
+        height: 20px;
+        width: 20px;
+        margin-top: 15px;
+    }
+
+    .menu ul li {
+        display: block;
+        padding: 10px;
+        background: #F6F3FC;
+        position: relative;
+    }
+
+    .open {
+        display: none;
+        position: absolute;
+        top: 33px;
+        left: -8%;
+        width: 108%;
+    }
+
+    .open li:hover {
+        background-color: #796EFF;
+    }
+
+    .menu:hover .open {
+        display: block;
+    }
+
+    .manage {
+        width: 100%;
+        font-size: 32px;
+    }
+
+    .info {
+        text-align: justify;
+        font-size: 14px;
+        padding: 5px 10px;
+    }
+
+    /* ------------------------------------------------------section 1----------------------------------- */
+    .img-1 {
+        width: 100%;
+        height: 70vh;
+        margin: 5px auto;
+        text-align: center;
+    }
+
+    /* ---------------------------------------------------------section 2------------------------------------ */
+    .sec-2 {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .trusted {
+        text-align: center;
+    }
+
+    .sec-2 .box {
+        height: auto;
+        margin: 0%;
+        width: 100%;
+        padding: 0;
+        position: relative;
+    }
+
+    .slr-1 {
+        border: 1px solid transparent;
+        border-bottom: 8px solid #796EFF;
+        padding: 10px 0;
+    }
+
+    .logo div {
+        width: 70%;
+    }
+
+    .lay {
+        display: none;
+    }
+
+    /* ----------------------------------------------section 3------------------------------------ */
+    .sec-3 {
+        margin: auto;
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sec-3 .layout {
+        text-align: center;
+        position: relative;
+        width: 100%;
+        padding: 15PX;
+    }
+
+    .sec-3 .layout .logoes {
+        position: absolute;
+        top: 15px;
+        left: 48%;
+    }
+
+    .but {
+        margin: auto;
+    }
+
+    .work {
+        font-size: 32px;
+        margin: 0%;
+        font-weight: 600;
+    }
+
+    .work-info {
+        margin-top: 20px;
+        width: 90%;
+        padding: 10px 0;
+        text-align: justify;
+    }
+
+    /* -----------------------------------------------------------sec 4-------------------------------- */
+    .sec-4 {
+        margin-top: 20px;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+    }
+
+    .box {
+        width: 60%;
+    }
+
+    .sec-4 .b {
+        display: none !important;
+    }
+
+    .box img {
+        margin-top: 10px;
+    }
+
+    .i {
+        text-align: center !important;
+    }
+
+    /* ---------------------------------------------------------sec 5------------------------------------------- */
+    .sec-5 {
+        padding: 0%;
+        height: auto;
+        width: 100%;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .sec-5 p {
+        font-weight: 600;
+        font-size: 22px;
+    }
+
+    .sec-5 .part {
+        text-align: center;
+        width: 100%;
+    }
+
+    .sec-5 .p-1 {
+        padding: 0%;
+    }
+
+    .sec-5 .p-2 {
+        width: 250px;
+    }
+
+    .sec-5 .p-2 img {
+        margin: 16px;
+    }
+
+    /* -----------------------------------------------footer------------------------------------- */
+    footer .lists .sec ul li {
+        display: none;
+    }
+
+    footer .lists .sec ul:hover li {
+        display: block;
+    }
+
+    footer .lists {
+        flex-wrap: wrap;
+    }
+
+    footer .lists .s1 {
+        margin-top: 40px;
+    }
+
+    footer .sec {
+        height: auto;
+        width: 100%;
+    }
+
+    footer .sec ul {
+        margin: 20px 7%;
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    footer .sec ul svg {
+        margin-left: 60%;
+    }
+
+    footer .s2 ul svg {
+        margin-left: 63.5%;
+    }
+
+    footer .s3 ul svg {
+        margin-left: 68.5%;
+    }
+
+    footer .lists .s4 {
+        margin: 20px 15%;
+    }
+
+    footer .lists .s4 h3 {
+        margin: 0 auto 40px auto;
+        letter-spacing: 1px;
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+
+    /* ------------------------------- */
+    .copyright {
+        height: 50px;
+    }
+
+    .copyright .icon svg {
+        display: inline-block;
+    }
+
+    .copyright p {
+        margin-top: -100px;
+    }
+
+    footer .copyright .icon {
+        display: none;
+    }
+}

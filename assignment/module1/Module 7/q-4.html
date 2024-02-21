@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>q-4</title>
+    <link rel="shortcut icon" href="https://store.shopware.com/media/image/8b/8f/e3/file646cb188c7fb8.png"
+        type="image/x-icon">
+    <style>
+        body {
+            height: 100vh;
+            width: 100%;
+            box-sizing: border-box;
+            padding: 0%;
+            margin: 0%;
+            background: #ccf3d8;
+            background-size: 100% 100%;
+        }
+
+        li {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+        }
+
+        section {
+            padding: 20px;
+            margin: 10px;
+            border: 1px solid #000;
+            cursor: pointer;
+        }
+        .pera{
+            color: gray;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h2><u>Q-4</u> Event bubbling tickling example.</h2>
+    <section class="red">
+        <p>body(great grand parent)</p>
+        <section class="red">
+            <p>div(great grandPaerent)</p>
+            <section class="red">
+                <p>ul(grandPaerent)</p>
+                <section class="red">
+                    <p>li(direct parent)</p>
+                    <section id="child">
+                        <p class="pera">span</p>
+                    </section>
+                </section>
+            </section>
+        </section>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+</body>
+<script>
+    $(document).ready(function () {
+        $('#child').on('click', function () {
+            $('.red').css({ "border": "1px solid red", "color": "red" })
+        })
+    })
+
+
+</script>
+
+</html>

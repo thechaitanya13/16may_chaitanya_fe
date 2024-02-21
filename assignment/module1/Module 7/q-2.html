@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>q-2</title>
+    <link rel="shortcut icon" href="https://store.shopware.com/media/image/8b/8f/e3/file646cb188c7fb8.png"
+        type="image/x-icon">
+    <style>
+        body {
+            height: 100vh;
+            width: 100%;
+            box-sizing: border-box;
+            padding: 0%;
+            margin: 0%;
+            background: #C6FAD6;
+            background-size: 100% 100%;
+        }
+
+        li {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+        }
+
+        .newClass {
+            background-color: red !important;
+            height: 200px;
+        }
+
+        p {
+            width: 200px;
+            padding: 20px;
+            background-color: blue;
+            cursor: pointer;
+        }
+
+        .box-2 {
+            width: 100px;
+            height: 100px;
+            background-color: #3498db;
+        margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <h2><u>Q-2</u> How to Apply CSS Using JQuery, How to Add Class and Remove Class in Jquery, JQuery Animation?</h2>
+    <li>By using css method we can set CSS properties for selected elements. </li>
+    <li>By using this can pass property and value pairs to the method.</li>
+    <li>by using addClass and removeClass method we can do Add Class and Remove Class in Jquery, JQuery Animation </li>
+    <li>by also using toggle method we can also add and remove Class.</li>
+    <h1>Ex.</h1>
+    <div id="box"></div>
+
+    <button id="addBtn">Add Class</button>
+    <button id="rmvBtn">Remove Class</button>
+    
+    <div class="box-2"></div>
+    <button id="animateButton">Animate </button>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#box").css({ "border": "5px double black", "width": "42%", "padding": "12px", "background": "Yellow" });
+
+            $('#addBtn').click(function () {
+                $('#box').addClass('newClass');
+            });
+
+            $('#rmvBtn').click(function () {
+                $('#box').removeClass('newClass');
+            });
+
+            $("#pera").click(function () {
+                $("#pera").animate({ backgroundColor: 'red' });
+            });
+            $("#animateButton").click(function () {
+                $(".box-2").animate({
+                    width: "100%"
+                }, 1000); 
+            });
+        });
+    </script>
+</body>

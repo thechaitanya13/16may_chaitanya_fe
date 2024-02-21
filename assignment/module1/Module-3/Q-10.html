@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Que-10</title>
+  <style>
+    BODY {
+      background-color: lightgreen;
+    }
+
+    table,
+    th,
+    td {
+      border: 1px solid blue;
+      border-collapse: collapse;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>Que-10 How can we club two or more rows or columns into a single row or column in an HTML table? With Example.
+  </h2>
+  <hr>
+  <p> During Table creating , when We club two or more than column we require 'colspan' attributes and during club the
+    one or more than row we require 'rowspan' attributes
+    <br> <br>For Example:-
+  </p>
+  <center>
+
+    <caption>
+      <H4>Rowspan and Colspan</H4>
+    </caption>
+    <table style="width: 400px;" height="250px">
+      <tr style="height: 40PX;">
+        <th style="background-color: rgb(192, 102, 102);" colspan="2">&lt; header &gt;</th>
+      </tr>
+
+      <tr style="background-color: lightseagreen;">
+        <th colspan="2" style="height: 40PX;">&lt; nav &gt;</th>
+      </tr>
+
+      <tr>
+        <th style="background-color: rgb(211, 200, 183);">&lt; seaction &gt;</th>
+        <th rowspan="3" style="background-color: dimgrey;">&lt; aside &gt;</th>
+      </tr>
+
+      <tr>
+        <th style="background-color: rgb(204, 131, 79);">Heading</th>
+      </tr>
+
+      <tr style="height: 110PX;">
+        <th style="background-color: rgb(136, 107, 163);">&lt; article &gt;</th>
+      </tr>
+
+      <tr style="height: 40PX;">
+        <th colspan="2" style="background-color: burlywood;">&lt; footer &gt;</th>
+      </tr>
+
+    </table>
+  </center>
+  <br>
+  <li>In this table Header,nav,footer made using colspan ,aside section made using rawspan</li>
+</body>
+
+</html>

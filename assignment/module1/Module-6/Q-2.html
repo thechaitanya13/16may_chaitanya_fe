@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q-2</title>
+    <style>
+        body {
+            background-color: #FCE77E;
+        }
+
+        li {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2><u>Q-2</u> What is the use of isNaN function ?</h2>
+    <li>The meaning of 'isNaN' is <b>"is Not A Number"</b>. </li>
+    <li>It is <b>built-in</b> function of javascript function .</li>
+    <li> This function give true or false value by check given condition. </li>
+    <li> if given values data type is <b>'Number'</b> than this function give <b>"false"</b> value otherwise for other data types it return <b>"true "</b> value .</li>
+    <p>Hear you can check <b>'isNaN function's' use.</b></p>
+    <!-- ------------------------------------------------------------Example-------------------------------->
+    <h2>Example:-</h2>
+    <h3>insert any data type value: <input type="text" id="v1"></h3>
+    <p><button onclick="number()">check</button></p>
+</body>
+<script>
+    function number() {
+        let a = document.getElementById("v1").value;
+         console.log(a)
+        if (a == "") {
+            alert('Insert a value in the input box');
+        }
+        else if (isNaN(a)) {
+            alert('Your given value is Not a Number');
+        }
+        else {
+            alert('Your given value is a Number');
+        }
+    }
+</script>
+
+</html>

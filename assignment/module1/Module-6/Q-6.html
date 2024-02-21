@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q-6</title>
+    <style>
+        body {
+            background-color: #C6FAD6;
+        }
+
+        li {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+        }
+
+        .new-div {
+            background-color: lightsalmon;
+            padding: 10px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2><u>Q-6</u> Write the code for adding new elements dynamically?<h2>
+        <pre>
+             document.getElementById('addDivButton').addEventListener('click', function () {
+                var newDiv = document.createElement('div');
+                newDiv.className = 'new-div';
+                newDiv.innerHTML = 'New Div created by clicking the button';
+                document.body.appendChild(newDiv);
+            }); 
+        </pre>
+            <button id="addDivButton">Add Div</button>
+</body>
+
+<script>
+    document.getElementById('addDivButton').addEventListener('click', function () {
+        var newDiv = document.createElement('div');
+        newDiv.className = 'new-div';
+        newDiv.innerHTML = 'New Div created by clicking the button';
+        document.body.appendChild(newDiv);
+    });
+</script>
+
+</html>

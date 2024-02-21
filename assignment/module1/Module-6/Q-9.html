@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q-9</title>
+    <style>
+        body {
+            background-color: #C6FAD6;
+        }
+
+        li {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+        }
+
+        button {
+            padding: 10px;
+        }
+
+        div {
+            border: 1px solid;
+            height: 200px;
+            width: 50%;
+            margin: 50px auto;
+
+        }
+
+        .green {
+            background: limegreen;
+        }
+
+        .coral {
+            background-color: lightcoral;
+        }
+
+        .red {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h2><u>Q-9</u> How can the style/class of an element be changed?
+    </h2>
+    <li> By javascript , 2 method we can change class of element ,hear example of both method.</li>
+    <p>1. toggle method</p>
+    <li>Clicking the "toggle " button will toggle the red class on and off using classList.toggle('red').</li>
+    <p>2. replace method</p>
+    <li>Clicking the "Replace " button will replace the <b>green</b> class with the <b>coral</b> class using
+        classList.replace('green', 'coral').</li>
+    <button id="toggle">toggle</button>
+    <button id="replace">replace</button>
+    <div id="box" class="green"></div>
+</body>
+<script>
+    let btn1 = document.getElementById("toggle");
+    let btn2 = document.getElementById("replace");
+    let div = document.getElementById("box");
+    btn1.addEventListener('click', () => {
+        div.classList.toggle('red')
+    });
+    btn2.addEventListener('click', () => {
+        div.classList.replace('green', 'coral')
+    });
+
+</script>
+
+</html>

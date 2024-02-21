@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q-14</title>
+    <style>
+        body {
+            background-color: #FCE77E;
+        }
+
+        li {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+        }
+
+        div {
+            background-color: lightcyan;
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <h2><u>Q-14</u> What are all the types of Pop up boxes available in JavaScript?
+    </h2>
+    <li> In JavaScript there are three types of pop up boxes available in JavaScript. </li>
+
+    <p>1.alert box:-
+        <li>the alert box is used to display a simple message on display. </li>
+        <li>user can read and just give <b>ok</b> response.</li>
+    </p>
+    <p>2. Confirm Box:-
+        <li>the confirm is used to get two types response <b>"OK" or "Cancel."</b></li>
+    </p>
+    <p>3. Prompt Box:-
+        <li>The prompt dialog is used to get input from the user. <br>
+        </li>
+    </p>
+    <div>
+        <p>Hear three button by click you can check alert box .</p>
+        <p><button id="b1">Alert</button> <button id="b2">Confirm</button> <button id="b3">Prompt Box</button></p>
+    </div>
+</body>
+<script>
+    var button1 = document.getElementById("b1");
+    button1.addEventListener("click", function () {
+        alert('This is alert box ');
+    });
+    var button2 = document.getElementById("b2");
+    button2.addEventListener("click", function () {
+        confirm('This is confrim box ');
+    });
+    var button3 = document.getElementById("b3");
+    button3.addEventListener("click", function () {
+        prompt('This is prompt box');
+    });
+
+
+</script>
+
+</html>

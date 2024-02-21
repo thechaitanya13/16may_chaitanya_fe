@@ -1,0 +1,17 @@
+body{
+    height: 90VH;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    box-sizing: border-box;
+    background-color: #FCE77E;
+}
+.container{
+    background-color: lightgreen;
+    padding: 50PX;
+    font-size: 20px;
+    font-style: italic;
+}
+P{
+    text-align: center;
+}

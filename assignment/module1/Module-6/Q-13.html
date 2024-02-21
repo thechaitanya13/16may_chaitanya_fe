@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q-13</title>
+    <style>
+        body {
+            background-color: #C6FAD6;
+        }
+
+        li {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2><u>Q-13</u> What is the function of the delete operator?
+        <h2>
+            <li> An object's property is removed using the delete operator.</li>
+            <pre>
+                let person = {
+                    firstName: 'gaurav',
+                    lastName: 'nakum',
+                    age: 18
+                };
+                console.log(person);
+                delete person.age;
+                console.log(person); 
+            </pre>
+
+</body>
+<script>
+    let person = {
+        firstName: 'gaurav',
+        lastName: 'nakum',
+        age: 30
+    };
+    console.log(person);
+
+    delete person.age;
+
+    console.log(person); 
+</script>
+
+</html>

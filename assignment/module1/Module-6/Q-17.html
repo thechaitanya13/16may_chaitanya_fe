@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q-17</title>
+    <style>
+        body {
+            background-color: #FCE77E;
+        }
+
+        li {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+        }
+        div{
+            background-color: lightcyan;
+            display: inline-block;
+        }
+        h3{
+            text-align: center;
+        }
+        #info{
+            background-color: lightpink;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h2><u>Q-17</u> What are the disadvantages of using innerHTML in JavaScript?
+    </h2>
+    <li> It,s disadvantages is if we add some text by this in any element ,that time element lose it's privious all text
+        content. </li>
+    <li>Ex. hear my name is written in p tag and i am add my information by inner html than my name was erased.</li>
+    <p id="info"> My name is gaurav namkum</p>
+     <div>
+        <h3>code</h3>
+       &lt; p id="info" &gt; My name is gaurav namkum &lt;/p&gt;
+   <p> document.getElementById('info').innerHTML = ' I am learning javascript .';</p>
+    </div> 
+</body>
+<script>
+    document.getElementById('info').innerHTML = ' I am learning javascript .';
+</script>
+
+</html>

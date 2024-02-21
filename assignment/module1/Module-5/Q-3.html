@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q-3</title>
+    <style>
+        body {
+            background-color: #FCE77E;
+        }
+
+        li {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+        }
+
+        .webpage {
+            margin: auto;
+            background-color: #B5E61D;
+            width: 70%;
+            border: 1px solid;
+            display: grid;
+            grid-template-rows:50px,50px,200px,200px,50px;
+            gap: 5px 5px;
+            grid-template-columns:repeat(2,1fr);
+            text-align: center;
+        }
+        header {
+            background-color: #22B14C;
+            height: 50px;
+            grid-area: 1/1/2/3;
+        }
+
+        nav {
+            background-color: #99D9EA;
+            height: 50px;
+            grid-area: 2/1/3/3;
+        }
+
+        aside {
+            background-color: #3F48CC;
+            height: 100px;
+            grid-area: 3/1/4/2;
+        }
+
+        article {
+            background-color: #A349A4;
+            height: 100px;
+            grid-area: 4/1/5/2;
+        }
+
+        section {
+            background-color: aqua;
+            height: 200px;
+            grid-area: 3/2/5/3;
+        }
+
+        footer {
+            background-color: #FF7F27;
+            height: 50px;
+            grid-area: 5/1/6/3;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>
+        <u>Q-3 &nbsp; Semantic Element in HTML5? </u>
+    </h2>
+    <h2>Ans.</h2>
+    <h3>Sementic element have its used create for the structure, it's tags have given it's name according it's work.
+    </h3>
+    <li>&lt;header&gt;:-it use to create header section in webpage it include web-logo</li>
+    <li>&lt;nav&gt;:-navigation used for create the menu or some other option.</li>
+    <li>&lt;aside&gt;:- it used for side-content in webpages.</li>
+    <li>&lt;article&gt;:- it is used for some article,poster etc content. </li>
+    <li>&lt;section&gt;:- it is used for saw all type content in web page.</li>
+    <li>&lt;footer&gt;: it is used for footer in web page for saw copyright info of site and other contact details.</li>
+    <div class="webpage">
+        <header>header</header>
+        <nav>nav</nav>
+        <aside>aside</aside>
+        <article>article</article>
+        <section>section</section>
+        <footer>footer</footer>
+    </div>
+</body>
+
+</html>

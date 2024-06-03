@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Restaurant Booking Form</title>
+    <style>
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <h1>Restaurant Booking Form</h1>
+    <form id="bookingForm">
+        <div class="form-group">
+            <label for="bookingType">Choice of booking</label>
+            <select id="bookingType" name="bookingType">
+                <option value="">Select booking type</option>
+                <option value="fullDay">Full day booking</option>
+                <option value="halfDay">Half day booking</option>
+                <option value="hourly">Hourly booking</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="userName">User name</label>
+            <input type="text" id="userName" name="userName" required>
+        </div>
+        <div class="form-group">
+            <label for="mobileNumber">Mobile Number</label>
+            <input type="tel" id="mobileNumber" name="mobileNumber" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="numPersons">No of person</label>
+            <input type="number" id="numPersons" name="numPersons" required>
+        </div>
+        <div id="additionalFields"></div>
+        <div class="form-group">
+            <button type="submit">Book Now</button>
+        </div>
+    </form>
+
+    <script>
+        document.getElementById('bookingType').addEventListener('change', function() {
+            const additionalFields = document.getElementById('additionalFields');
+            additionalFields.innerHTML = ''; // Clear previous fields
+
+            const bookingType = this.value;
+
+            if (bookingType === 'fullDay') {
+                // Full day booking: only date option is available
+                createDatePicker(additionalFields);
+            } else if (bookingType === 'halfDay') {
+                // Half day booking: date and slot options are available
+                createDatePicker(additionalFields);
+                createSlotPicker(additionalFields);
+            } else if (bookingType === 'hourly') {
+                // Hourly booking: date and time options are available
+                createDatePicker(additionalFields);
+                createTimePicker(additionalFields);
+            }
+        });
+
+        function createDatePicker(parent) {
+            const dateDiv = document.createElement('div');
+            dateDiv.className = 'form-group';
+
+            const dateLabel = document.createElement('label');
+            dateLabel.htmlFor = 'date';
+            dateLabel.textContent = 'Date';
+
+            const dateInput = document.createElement('input');
+            dateInput.type = 'date';
+            dateInput.id = 'date';
+            dateInput.name = 'date';
+            dateInput.required = true;
+
+            dateDiv.appendChild(dateLabel);
+            dateDiv.appendChild(dateInput);
+            parent.appendChild(dateDiv);
+        }
+
+        function createSlotPicker(parent) {
+            const slotDiv = document.createElement('div');
+            slotDiv.className = 'form-group';
+
+            const slotLabel = document.createElement('label');
+            slotLabel.htmlFor = 'slot';
+            slotLabel.textContent = 'Slot';
+
+            const slotSelect = document.createElement('select');
+            slotSelect.id = 'slot';
+            slotSelect.name = 'slot';
+            slotSelect.required = true;
+
+            const slotOptions = ['', 'Breakfast', 'Lunch', 'Dinner'];
+            slotOptions.forEach(slot => {
+                const option = document.createElement('option');
+                option.value = slot.toLowerCase();
+                option.textContent = slot;
+                slotSelect.appendChild(option);
+            });
+
+            slotDiv.appendChild(slotLabel);
+            slotDiv.appendChild(slotSelect);
+            parent.appendChild(slotDiv);
+        }
+
+        function createTimePicker(parent) {
+            const timeDiv = document.createElement('div');
+            timeDiv.className = 'form-group';
+
+            const timeLabel = document.createElement('label');
+            timeLabel.htmlFor = 'time';
+            timeLabel.textContent = 'Time';
+
+            const timeInput = document.createElement('input');
+            timeInput.type = 'time';
+            timeInput.id = 'time';
+            timeInput.name = 'time';
+            timeInput.required = true;
+
+            timeDiv.appendChild(timeLabel);
+            timeDiv.appendChild(timeInput);
+            parent.appendChild(timeDiv);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CEW Network</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <header>
+        <h1>CEW Network</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#profile">Profile</a></li>
+                <li><a href="#referrals">Referrals</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>Welcome to the CEW Network</h2>
+            <p>This is a platform for corporate employees to communicate and share valuable information.</p>
+        </section>
+
+        <section id="events">
+            <h2>Company Events</h2>
+            <div id="eventList">
+                <!-- Event items will be appended here -->
+            </div>
+            <button onclick="showEventForm()">Add Event</button>
+        </section>
+
+        <section id="profile">
+            <h2>Your Profile</h2>
+            <!-- Profile management will go here -->
+        </section>
+
+        <section id="referrals">
+            <h2>Job Referrals</h2>
+            <!-- Referral management will go here -->
+        </section>
+    </main>
+
+    <div id="eventForm" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="hideEventForm()">&times;</span>
+            <h2>Add Event</h2>
+            <form id="addEventForm">
+                <label for="eventName">Event Name:</label>
+                <input type="text" id="eventName" name="eventName" required><br><br>
+                <label for="eventDate">Event Date:</label>
+                <input type="date" id="eventDate" name="eventDate" required><br><br>
+                <label for="eventDescription">Event Description:</label>
+                <textarea id="eventDescription" name="eventDescription" required></textarea><br><br>
+                <button type="button" onclick="addEvent()">Add Event</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="javascript.js"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Print Current Window Contents</title>
+</head>
+
+<body>
+
+     <!-- Question 13 -->
+
+     <!-- Example Is below -->
+
+     <button onclick="printWindowContents()">Print Window Contents</button>
+
+     <script>
+          function printWindowContents() {
+               // Open a new window and write the current document's HTML content
+               let printWindow = window.open('', '_blank');
+               printWindow.document.write('<html><head><title>Print</title></head><body>');
+               printWindow.document.write(document.documentElement.innerHTML);
+               printWindow.document.write('</body></html>');
+
+               // Close the new window after writing its contents
+               printWindow.document.close();
+
+               // Print the contents of the new window
+               printWindow.print();
+          }
+     </script>
+
+</body>
+
+</html>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="q-1">
+        <h1>1 : What are HTML Attributes explaine with two examples ?</h1>
+        <p>Attributes are specified within the opening tag of an element and consist of a name and a value, separated by an equals sign. Common attributes include “class” for defining CSS styles, “id” for uniquely identifying an element, and “src” for specifying the source of an image or media file.</p>
+    </div>
+
+    <div class="Ex">
+        <p style="margin: 2rem;">Ans : 1<br>
+            &lt;h1 class="padding : 20px;"&gt;Lorem ipsum dolor sit amet.&lt;/h1&gt; <br><br>
+            &lt;h1 id="margin : 20px;"&gt;Lorem ipsum dolor sit amet.&lt;/h1&gt; <br><br>
+        </p>
+    </div>
+
+
+    <div class="q-2">
+        <h1>2 : What is a marquee in HTML? explaine with two examples ?</h1>
+        <p>The marquee tag in HTML is used to create scrolling text or images on a webpage. It can scroll horizontally from left to right or right to left, and vertically from top to bottom or bottom to top. It includes attributes like direction to specify whether the content moves left, right, up, or down.</p>
+    </div>
+
+    <div class="Ex">
+        <div style="margin: 2rem;">Ans : 2<br>
+            <div class="main"> 
+                <marquee class="marq" bgcolor="Green" 
+                        direction="left" loop=""> 
+                    <div class="geek1"> 
+                        hello 
+                    </div> 
+                    <div class="geek2"> 
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, totam. 
+                    </div> 
+                </marquee> 
+            </div> 
+
+            <div class="main" style="margin-top: 2rem;"> 
+                <marquee class="marq" bgcolor="Green" 
+                        direction="up" loop=""> 
+                    <div class="geek1"> 
+                        hello 
+                    </div> 
+                    <div class="geek2"> 
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, quaerat.
+                    </div> 
+                </marquee> 
+            </div> 
+        </div>
+    </div>
+
+    <div class="q-3" style="margin: 2rem;">
+        <h1>3 :  Define the list types in HTML? explaine with examples of navbar and apply a dropdown in navbar also ?</h1>
+        <p>unordered list — used to group a set of related items in no particular order.</p>
+            <div>
+                &lt;ul&gt;<br>
+                    &lt;li>Data Structures & Algorithm&lt;/li&gt;<br>
+                    &lt;li>Web Technology&lt;/li&gt;<br>
+                    &lt;li>Aptitude & Logical Reasoning&lt;/li&gt;<br>
+                    &lt;li>Programming Languages&lt;/li&gt;<br>
+                &lt;/ul&gt;<br>
+            </div>
+            <p>ordered list — used to group a set of related items in a specific order.</p>
+            <div>
+                &lt;ol&gt;<br>
+                    &lt;li>Array&lt;/li&gt;<br>
+                    &lt;li>Linked List&lt;/li&gt;<br>
+                    &lt;li>Stacks&lt;/li&gt;<br>
+                    &lt;li>Queues&lt;/li&gt;<br>
+                    &lt;li>Trees&lt;/li&gt;<br>
+                    &lt;li>Graphs&lt;/li&gt;<br>
+                &lt;/ol&gt;<br>
+            </div>
+            <p>description list — used to display name/value pairs such as terms and definitions.</p>
+            <div>
+                &lt;dl&gt;<br>
+                    &lt;dt>Coffee&lt;/dt&gt;<br>
+                    &lt;dd>- black hot drink&lt;/dd&gt;<br>
+                    &lt;dt>Milk&lt;/dt&gt;<br>
+                    &lt;dd>- white cold drink&lt;/dd&gt;<br>
+                &lt;/dl&gt;<br>
+            </div>
+        </p>
+    </div>
+
+    <div class="Ex">
+        <p style="margin: 2rem;">Ans : 3<br>
+            <div class="navbar">
+                <a href="#home">Home</a>
+                <a href="#news">News</a>
+                <div class="dropdown">
+                  <button class="dropbtn">Dropdown 
+                    <i class="fa fa-caret-down"></i>
+                  </button>
+                  <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                  </div>
+                </div> 
+              </div>
+              
+        </p>
+    </div>
+
+
+    <div class="q-4" style="margin: 2rem;">
+        <h1>4 : What are void elements in HTML?explaine with examples 5 void elements?</h1>
+        <p>A void element is an element in HTML that cannot have any child nodes. Void elements only have a start tag; end tags must not be specified for void elements. In HTML, a void element must not have an end tag.</p>
+    </div>
+
+    <div class="Ex">
+        <p style="margin: 2rem;">Ans : 4<br>
+            <p style="margin: 20px 20px; font-size: 20px;">
+                &lt;br&gt;<br><br>
+                &lt;input&gt;<br><br>
+                &lt;hr&gt;
+            </p>
+        </p>
+    </div>
+
+
+    <div class="q-5" style="margin: 2rem;">
+        <h1>5 : What are HTML Entities? explain examples of two entities.</h1>
+        <p>An HTML entity is a piece of text ("string") that begins with an ampersand ( & ) and ends with a semicolon ( ; ).
+            Entities are frequently used to display reserved characters (which would otherwise be interpreted as HTML code),
+            and invisible characters (like non-breaking spaces).</p>
+    </div>
+
+    <div class="Ex">
+        <p style="margin: 2rem;">Ans : 5<br>
+            <p style="margin: 20px 20px; font-size: 20px;">
+                <p style="margin: 20px 20px; font-size: 20px;">
+                    <span> ( & lt ;) </span>   <br>
+                    <span> ( & gt ;) </span>   <br>
+                    </p>
+            </p>
+        </p>
+    </div>
+
+    <div class="q-6" style="margin: 2rem;">
+        <h1>6 : What do you understand by the universal sector explain with examples?</h1>
+        <p>As the name suggests, Universal Selector in CSS is used to select all the elements on the HTML page, such as &lt;p&gt;, &lt;h1&gt;, &lt;img&gt; etc. Therefore, CSS styles applied to the universal selector affect every element on the web page (including &lt;html&gt; and &lt;body&gt;).</p>
+    </div>
+
+    <div class="Ex">
+        <p style="margin: 2rem;">Ans : 6<br>
+            <p style="margin: 20px 20px; font-size: 20px;">
+                <p style="margin: 20px 20px; font-size: 20px;">
+                    * {<br>
+                        color: blue;<br>
+                      }<br>
+                </p>
+            </p>
+        </p>
+    </div>
+
+    <div class="q-7" style="margin: 2rem;">
+        <h1>7 : What are the elements of the CSS Box Model? explain with examples?</h1>
+        <p>The CSS box model is a container that contains multiple properties including borders, margin, padding, and the content itself. It is used to create the design and layout of web pages. According to the CSS box model, the web browser supplies each element as a square prism.20 Feb 2023</p>
+    </div>
+
+    <div class="Ex">
+        <p style="margin: 2rem;">Ans : 6<br>
+            <p style="margin: 20px 20px; font-size: 20px;">
+                <div class="box-model">
+                    This is an example of the CSS Box Model.
+                </div>
+            </p>
+        </p>
+    </div>
+
+
+    <div class="q-8" style="margin: 2rem;">
+        <h1>8 : What is meant by RGB stream?  set a background color of webpage using RGB stream?</h1>
+        <p class="rgb">What is meant by RGB stream? RGB represents colors in CSS. The three streams are namely Red, Green, and Blue. The intensity of colors is represented using numbers 0 to 256.28 Nov 2023</p>
+    </div>
+
+    <div class="q-9" style="margin: 2rem;">
+        <h1>9 : Define z-index ? create examples as look like this examples using z-index.</h1>
+        <p>The z-index property takes an integer value. The higher the integer, the higher the element will be in the stacking order. For example, if you have two elements with a z-index of 0 and 1, the element with a z-index of 1 will be in front of the element with a z-index of 0.19 Jul 2022</p>
+    </div>
+
+    <div class="container">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+
+    <div class="q-10" style="margin:2rem; margin-top: 28rem;">
+        <h1>10 : What are Root variables is CSS ? create an examples of root variables using external css just like below examples  and used media query to create a resposive webpage with all device breakpoints.</h1>
+        <p>The :root pseudo-class represents an element that is the root of the document. In HTML, this is always the HTML element, except that its specificity is higher… :root can be useful for declaring global CSS variables: :root { --main-color: hotpink; --main-bg-color: brown; }8 May 2022</p>
+    </div>
+
+    <div class="Ex">
+        <p style="margin: 2rem;">Ans : 10<br>
+            <p style="margin: 20px 20px; font-size: 20px;">
+                <div class="">
+                    :root {<br>
+                        --blue: #1e90ff;<br>
+                        --white: #ffffff;<br>
+                    }<br>
+
+                    <a href="./webpage/index.html">Click Now</a>
+                </div>
+            </p>
+        </p>
+    </div>
+</body>
+</html>
